@@ -3,7 +3,6 @@
         <container type="singularity">shub://vsoch/hello-world</container>
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
-        # execute default run command
         /singularity > '$output'
     ]]></command>
     <inputs>
