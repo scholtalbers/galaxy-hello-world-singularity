@@ -1,0 +1,17 @@
+<tool id="hello-world-singularity" name="Hello World Singularity" version="0.1.0" python_template_version="3.5">
+    <requirements>
+        <container type="singularity">shub://vsoch/hello-world</container>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        # execute default run command
+        /singularity > '$output'
+    ]]></command>
+    <inputs>
+    </inputs>
+    <outputs>
+      <data format="txt" name="output" />
+    </outputs>
+    <help><![CDATA[
+        Run a hello-world singularity example. Uses the 'shub://vsoch/hello-world' container.
+    ]]></help>
+</tool>
